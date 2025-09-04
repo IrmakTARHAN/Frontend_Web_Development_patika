@@ -1,6 +1,6 @@
 # Merge Sort Project
 
-This file contains the Merge Sort assignment from the "Data Structures and Algorithms" course by Umu Atakul from Patika.dev.
+This file contains the Merge Sort assignment from the "Data Structures and Algorithms" course by Irmak Tarhan from Patika.dev.
 
 The array [16, 21, 11, 8, 12, 22] will be sorted using the Merge Sort algorithm.
 

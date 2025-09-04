@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap');
+body {
+    font-family: 'Inter', sans-serif;
+    overflow-x: hidden;
+}
+
+/* Hero Section için Arka Plan Resmi */
+.hero-bg {
+    background-image: url('https://images.pexels.com/photos/338504/pexels-photo-338504.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Resim galerisi için hover efekti */
+.image-card-hover:hover .overlay {
+    opacity: 1;
+}
+
+.image-card-hover:hover img {
+    transform: scale(1.05);
+}

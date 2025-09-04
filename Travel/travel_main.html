@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="tr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seyahat Rehberi</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- CSS dosyasını bağlama -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Navbar -->
+    <nav class="fixed top-0 w-full z-50 bg-white shadow-md">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="#ana-sayfa" class="text-2xl font-extrabold text-indigo-600">Travel</a>
+            <div class="hidden md:flex space-x-6 font-semibold">
+                <a href="#turlar" class="text-gray-600 hover:text-indigo-600 transition duration-300">Turlar</a>
+                <a href="#galeri" class="text-gray-600 hover:text-indigo-600 transition duration-300">Galeri</a>
+                <a href="#iletisim" class="text-gray-600 hover:text-indigo-600 transition duration-300">İletişim</a>
+            </div>
+            <div class="md:hidden">
+                <!-- Hamburger Menü -->
+                <button id="hamburger-menu" class="text-gray-600 focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                </button>
+            </div>
+        </div>
+        <!-- Mobil Menü -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white text-center pb-4 transition-all duration-300">
+            <a href="#turlar" class="block py-2 text-gray-600 hover:bg-gray-100">Turlar</a>
+            <a href="#galeri" class="block py-2 text-gray-600 hover:bg-gray-100">Galeri</a>
+            <a href="#iletisim" class="block py-2 text-gray-600 hover:bg-gray-100">İletişim</a>
+        </div>
+    </nav>
+
+    <!-- Ana Sayfa (Hero) -->
+    <section id="ana-sayfa" class="hero-bg min-h-screen flex items-center justify-center text-center text-white p-4">
+        <div class="bg-black bg-opacity-40 p-8 rounded-xl max-w-2xl mx-auto shadow-2xl">
+            <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-wide mb-4">Hayalindeki Yere Uç!</h1>
+            <p class="text-lg sm:text-xl font-light mb-8">En güzel tatil destinasyonlarını senin için seçtik.</p>
+            <a href="#turlar" class="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3 px-8 rounded-full shadow-lg transition duration-300 transform hover:scale-105">Hemen Keşfet</a>
+        </div>
+    </section>
+
+    <!-- Turlar Bölümü -->
+    <section id="turlar" class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-extrabold text-center mb-12 text-gray-800">Popüler Turlarımız</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Roma Turu Kartı -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden transition-all duration-300 transform hover:scale-105">
+                    <div class="flex gap-1 h-48">
+                        <img src="https://www.google.com/imgres?q=roma%20%C5%9Fehir%20merkezi&imgurl=https%3A%2F%2Fassets.enuygun.com%2Fmedia%2Flib%2F570x400%2Fuploads%2Fimage%2F4077.jpeg&imgrefurl=https%3A%2F%2Fwww.enuygun.com%2Fucak-bileti%2Froma-sehir-rehberi%2F&docid=Afa8vPTtUjMalM&tbnid=sKUDd46o6bvVwM&vet=12ahUKEwiO39nI1r-PAxVh8LsIHTdDBEgQM3oECBcQAA..i&w=570&h=400&hcb=2&ved=2ahUKEwiO39nI1r-PAxVh8LsIHTdDBEgQM3oECBcQAA" alt="Roma Şehir Merkezi" class="w-1/2 h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-2">Roma, İtalya</h3>
+                        <p class="text-gray-600 mb-4">4 Gece 5 Gün - 499$</p>
+                        <button onclick="scrollToSection('turlar')" class="w-full bg-indigo-500 hover:bg-indigo-600 text-white font-semibold py-2 rounded-lg transition-colors duration-300">Detaylı İncele</button>
+                    </div>
+                </div>
+
+                <!-- Kapadokya Turu Kartı -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden transition-all duration-300 transform hover:scale-105">
+                    <div class="flex gap-1 h-48">
+                        <img src="https://images.pexels.com/photos/4553250/pexels-photo-4553250.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Kapadokya Peri Bacaları" class="w-1/2 h-full object-cover">
+                        <img src="https://images.pexels.com/photos/4034825/pexels-photo-4034825.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Kapadokya Peri Bacaları" class="w-1/2 h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-2">Kapadokya, Türkiye</h3>
+                        <p class="text-gray-600 mb-4">2 Gece 3 Gün - 299$</p>
+                        <button onclick="scrollToSection('turlar')" class="w-full bg-indigo-500 hover:bg-indigo-600 text-white font-semibold py-2 rounded-lg transition-colors duration-300">Detaylı İncele</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Foto Galeri -->
+    <section id="galeri" class="py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-extrabold text-center mb-12 text-gray-800">Gezilerden Kareler</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+                <!-- Görsel 1 -->
+                <div class="relative overflow-hidden rounded-xl shadow-md image-card-hover cursor-pointer">
+                    <img src="https://images.pexels.com/photos/14713745/pexels-photo-14713745.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Dağ Manzarası" class="w-full h-64 object-cover transform transition-all duration-500">
+                    <div class="overlay absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center opacity-0 transition-opacity duration-500">
+                        <p class="text-white text-3xl font-bold">❤️</p>
+                    </div>
+                </div>
+                <!-- Görsel 2 -->
+                <div class="relative overflow-hidden rounded-xl shadow-md image-card-hover cursor-pointer">
+                    <img src="https://images.pexels.com/photos/4006184/pexels-photo-4006184.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Şehir Manzarası" class="w-full h-64 object-cover transform transition-all duration-500">
+                    <div class="overlay absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center opacity-0 transition-opacity duration-500">
+                        <p class="text-white text-3xl font-bold">❤️</p>
+                    </div>
+                </div>
+                <!-- Görsel 3 -->
+                <div class="relative overflow-hidden rounded-xl shadow-md image-card-hover cursor-pointer">
+                    <img src="https://images.pexels.com/photos/1287460/pexels-photo-1287460.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Deniz Manzarası" class="w-full h-64 object-cover transform transition-all duration-500">
+                    <div class="overlay absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center opacity-0 transition-opacity duration-500">
+                        <p class="text-white text-3xl font-bold">❤️</p>
+                    </div>
+                </div>
+                <!-- Görsel 4 -->
+                <div class="relative overflow-hidden rounded-xl shadow-md image-card-hover cursor-pointer">
+                    <img src="https://images.pexels.com/photos/258385/pexels-photo-258385.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Tropikal Ada" class="w-full h-64 object-cover transform transition-all duration-500">
+                    <div class="overlay absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center opacity-0 transition-opacity duration-500">
+                        <p class="text-white text-3xl font-bold">❤️</p>
+                    </div>
+                </div>
+                <!-- Görsel 5 -->
+                <div class="relative overflow-hidden rounded-xl shadow-md image-card-hover cursor-pointer">
+                    <img src="https://images.pexels.com/photos/1078981/pexels-photo-1078981.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Kapadokya" class="w-full h-64 object-cover transform transition-all duration-500">
+                    <div class="overlay absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center opacity-0 transition-opacity duration-500">
+                        <p class="text-white text-3xl font-bold">❤️</p>
+                    </div>
+               
+            </div>
+        </div>
+    </section>
+
+    <!-- İletişim Bölümü -->
+    <section id="iletisim" class="bg-gray-200 py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-extrabold text-center mb-12 text-gray-800">Bizimle İletişime Geç</h2>
+            <div class="flex justify-center">
+                <!-- İletişim Formu -->
+                <div class="bg-white p-8 rounded-xl shadow-lg w-full max-w-xl">
+                    <form class="space-y-6">
+                        <div>
+                            <label for="name" class="block text-sm font-medium text-gray-700">İsim</label>
+                            <input type="text" id="name" name="name" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500">
+                        </div>
+                        <div>
+                            <label for="email" class="block text-sm font-medium text-gray-700">E-posta</label>
+                            <input type="email" id="email" name="email" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500">
+                        </div>
+                        <div>
+                            <label for="message" class="block text-sm font-medium text-gray-700">Mesajınız</label>
+                            <textarea id="message" name="message" rows="4" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"></textarea>
+                        </div>
+                        <div>
+                            <button type="submit" class="w-full bg-orange-500 hover:bg-orange-600 text-white font-bold py-3 px-4 rounded-md shadow-md transition duration-300">Gönder</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sabit Fırsat Balonu -->
+    <a href="#turlar" class="fixed bottom-6 right-6 z-40 bg-orange-500 text-white p-4 rounded-full shadow-lg text-center font-bold text-sm md:text-base transform transition-all duration-300 hover:scale-110">
+        %50 İndirimli <br> Kapadokya Turu!
+    </a>
+
+    <!-- JavaScript for Mobile Menu & Scroll -->
+    <script>
+        document.getElementById('hamburger-menu').addEventListener('click', function() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        const menuLinks = document.querySelectorAll('#mobile-menu a, .hidden.md\\:flex a, .hero-bg a, .fixed.bottom-6 a');
+
+        menuLinks.forEach(link => {
+            link.addEventListener('click', function(e) {
+                // Sadece # ile başlayan linkler için kaydırma efekti ekle
+                if (link.getAttribute('href').startsWith('#')) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href');
+                    const targetSection = document.querySelector(targetId);
+                    if (targetSection) {
+                        window.scrollTo({
+                            top: targetSection.offsetTop,
+                            behavior: 'smooth'
+                        });
+                    }
+                    // Mobil menüyü kapat
+                    document.getElementById('mobile-menu').classList.add('hidden');
+                }
+            });
+        });
+
+        // "Detaylı İncele" butonları için kaydırma işlevi
+        function scrollToSection(sectionId) {
+            const targetSection = document.getElementById(sectionId);
+            if (targetSection) {
+                window.scrollTo({
+                    top: targetSection.offsetTop,
+                    behavior: 'smooth'
+                });
+            }
+        }
+    </script>
+</body>
+</html>

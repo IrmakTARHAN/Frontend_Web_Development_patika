@@ -1,5 +1,5 @@
 # Insertion Sort Project
-This file contains the Insertion Sort assignment from the "Data Structures and Algorithms" course by Umu Atakul from Patika.dev.
+This file contains the Insertion Sort assignment from the "Data Structures and Algorithms" course by Irmak Tarhan from Patika.dev.
 
 The array [22, 27, 16, 2, 18, 6] will be sorted using the Insertion Sort algorithm.
 

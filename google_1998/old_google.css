@@ -1,0 +1,52 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    color: #000000;
+    margin: 0;
+    padding: 0;
+    text-align: center; /* Sayfadaki her şeyi ortalamak için */
+}
+.header-section, .search-section, .links-section, .footer-section {
+    margin-top: 20px;
+}
+table {
+    margin: 0 auto; /* Tabloyu ortalamak için */
+    border: 1px solid #c0c0c0;
+    background-color: #eeeeee;
+}
+.search-box {
+    width: 300px;
+}
+.search-button {
+    font-size: 13px;
+}
+/* Yeni stil: Üç bölümlü kutu */
+.link-container {
+    border: 1px solid #28cb7a; /* Çerçeve rengi */
+    background-color: #92d2d2; /* Su yeşili arka plan */
+    display: flex; /* İçerikleri yan yana hizalamak için */
+    max-width: 900px;
+    margin: 0 auto;
+}
+.link-column {
+    text-align: center;
+    padding: 10px;
+    font-size: 13px;
+    flex: 1; /* Esnek boyutu ayarlar */
+    border-right: 1px solid #0ebb64; /* Sağ kenara çizgi ekle */
+}
+.link-column:last-child {
+    border-right: none; /* Son sütunda çizgi olmasın */
+}
+.link-column a {
+    color: #0000cc;
+    text-decoration: none;
+}
+.link-column a:hover {
+    text-decoration: underline;
+}
+.copyright {
+    font-size: 11px;
+    margin-top: 15px;
+}
+    

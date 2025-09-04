@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .google-logo {
+            width: 272px;
+            height: 92px;
+        }
+        .search-input-container {
+            border-radius: 9999px;
+            border-width: 1px;
+            border-color: #d3d3d3;
+            padding: 10px 20px;
+            width: 584px;
+            transition: box-shadow 0.3s;
+        }
+        .search-input-container:hover {
+            box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28);
+            border-color: transparent;
+        }
+        .search-input {
+            border: none;
+            outline: none;
+            width: 100%;
+        }
+        .icon {
+            color: #9aa0a6;
+            font-size: 20px;
+        }
+        .btn {
+            background-color: #f8f9fa;
+            border: 1px solid #f8f9fa;
+            color: #3c4043;
+            padding: 10px 20px;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+        .btn:hover {
+            border-color: #dadce0;
+        }
+    </style>
+</head>
+<body class="flex flex-col h-screen">
+    <!-- Header bölümü -->
+    <header class="flex justify-end p-4">
+        <nav class="flex items-center space-x-4 text-sm text-gray-700">
+            <a href="#" class="hover:underline">Gmail</a>
+            <a href="#" class="hover:underline">Görseller</a>
+            <!-- Google Uygulamaları Simgesi -->
+            <a href="#" class="hover:bg-gray-200 p-2 rounded-full">
+                <svg class="h-6 w-6 text-gray-500" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M6,8c1.1,0,2-0.9,2-2s-0.9-2-2-2S4,4.9,4,6S4.9,8,6,8z M6,10c-1.1,0-2,0.9-2,2s0.9,2,2,2s2-0.9,2-2S7.1,10,6,10z M6,16c-1.1,0-2,0.9-2,2s0.9,2,2,2s2-0.9,2-2S7.1,16,6,16z M12,8c1.1,0,2-0.9,2-2s-0.9-2-2-2s-2,0.9-2,2S10.9,8,12,8z M12,10c-1.1,0-2,0.9-2,2s0.9,2,2,2s2-0.9,2-2S10.9,10,12,10z M12,16c-1.1,0-2,0.9-2,2s0.9,2,2,2s2-0.9,2-2S10.9,16,12,16z M18,8c1.1,0,2-0.9,2-2s-0.9-2-2-2s-2,0.9-2,2S16.9,8,18,8z M18,10c-1.1,0-2,0.9-2,2s0.9,2,2,2s2-0.9,2-2S16.9,10,18,10z M18,16c-1.1,0-2,0.9-2,2s0.9,2,2,2s2-0.9,2-2S16.9,16,18,16z"></path>
+                </svg>
+            </a>
+            <!-- Profil Fotoğrafı Simgesi -->
+            <a href="#" class="hover:bg-gray-200 p-2 rounded-full">
+                <svg class="h-8 w-8 text-gray-500" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"></path>
+                </svg>
+            </a>
+        </nav>
+    </header>
+
+    <!-- Ana içerik bölümü -->
+    <main class="flex-grow flex flex-col items-center justify-center">
+        <!-- Google logosu -->
+        <img class="google-logo" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google Logo">
+
+        <!-- Arama çubuğu -->
+        <div class="search-input-container flex items-center mt-6">
+            <svg class="icon h-6 w-6 ml-2 mr-4" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path>
+            </svg>
+            <input type="text" class="search-input text-base" placeholder="">
+            <svg class="icon h-6 w-6 mx-2" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 14c1.66 0 2.99-1.34 2.99-3L15 5c0-1.66-1.34-3-3-3S9 3.34 9 5v6c0 1.66 1.34 3 3 3zm5.3-3c0 3.1-2.54 5.1-5.3 5.1S6.7 14.1 6.7 11H5c0 3.41 2.72 6.23 6 6.72V21h2v-3.28c3.28-.49 6-3.31 6-6.72h-1.7z"></path>
+            </svg>
+        </div>
+
+        <!-- Butonlar -->
+        <div class="flex space-x-4 mt-6">
+            <button class="btn">Google'da Ara</button>
+            <button class="btn">Kendimi Şanslı Hissediyorum</button>
+        </div>
+
+        <!-- Dil seçenekleri -->
+        <div class="mt-8 text-sm text-gray-700">
+            Google'ı kullanabileceğiniz diğer diller:
+            <a href="#" class="text-blue-600 hover:underline">English</a>
+            <a href="#" class="text-blue-600 hover:underline">Türkçe</a>
+            <a href="#" class="text-blue-600 hover:underline">Deutsch</a>
+        </div>
+    </main>
+
+    <!-- Footer bölümü -->
+    <footer class="bg-gray-100 py-4 text-sm text-gray-500">
+        <div class="px-8 border-b border-gray-300">
+            Türkiye
+        </div>
+        <div class="flex justify-between items-center px-8 mt-4">
+            <div class="space-x-4">
+                <a href="#" class="hover:underline">Hakkında</a>
+                <a href="#" class="hover:underline">Reklam</a>
+                <a href="#" class="hover:underline">İşletme</a>
+                <a href="#" class="hover:underline">Arama Nasıl Çalışır?</a>
+            </div>
+            <div class="space-x-4">
+                <a href="#" class="hover:underline">Gizlilik</a>
+                <a href="#" class="hover:underline">Şartlar</a>
+                <a href="#" class="hover:underline">Ayarlar</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

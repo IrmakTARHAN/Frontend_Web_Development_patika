@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oatmeal Recipe</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f3f4f6;
+        }
+    </style>
+</head>
+<body class="flex items-center justify-center min-h-screen p-4">
+
+    <!-- Main Container -->
+    <div class="max-w-3xl w-full bg-white rounded-xl shadow-lg overflow-hidden flex flex-col">
+
+        <!-- Title and Image Section -->
+        <div class="relative bg-indigo-800 p-6 text-white">
+            <h1 class="text-3xl sm:text-4xl font-extrabold mb-1 text-center">Simple and Delicious Oatmeal Recipe</h1>
+            <p class="text-indigo-200 text-center text-sm">A practical recipe for an energetic start to the day.</p>
+            <!-- Div to contain the image is scaled down -->
+            <div class="mt-4 rounded-lg overflow-hidden shadow-xl max-w-lg mx-auto">
+                <!-- Image dimensions are scaled down -->
+                <img src="https://placehold.co/600x400/8B5CF6/ffffff?text=Oatmeal+Bowl" alt="Image of an oatmeal bowl" class="w-full h-auto object-cover">
+            </div>
+        </div>
+
+        <!-- Content Section -->
+        <div class="bg-amber-100 p-8 md:p-12">
+            <!-- Ingredients Section -->
+            <div class="mb-8">
+                <h2 class="text-2xl font-bold text-gray-800 mb-4 border-b-2 border-gray-300 pb-2">Ingredients</h2>
+                <ul class="list-disc list-inside space-y-2 text-gray-700">
+                    <li>1 cup rolled oats</li>
+                    <li>1.5 cups milk or water</li>
+                    <li>1 tablespoon honey or maple syrup</li>
+                    <li>Half a teaspoon of cinnamon</li>
+                    <li>A pinch of salt</li>
+                    <li>Topping: Blueberries, banana, strawberries, nuts, etc.</li>
+                </ul>
+            </div>
+
+            <!-- Instructions Section -->
+            <div>
+                <h2 class="text-2xl font-bold text-gray-800 mb-4 border-b-2 border-gray-300 pb-2">Instructions</h2>
+                <ol class="list-decimal list-inside space-y-2 text-gray-700">
+                    <li>Combine oats, milk or water in a small saucepan.</li>
+                    <li>Cook on medium heat, stirring constantly for 5-7 minutes. Remove from heat when the consistency thickens.</li>
+                    <li>Stir in honey, cinnamon, and salt.</li>
+                    <li>Pour into a bowl and top with your favorite fruits or nuts before serving.</li>
+                </ol>
+            </div>
+            
+            <!-- Footer -->
+            <div class="mt-12 text-center text-lg font-semibold text-gray-600">
+                <p>Enjoy! 😜</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
